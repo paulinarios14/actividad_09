@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACTIVIDAD 09</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        /* Botón interactivo */
+        .btn {
+            background-color: #0087e1;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #00b4a5;
+            color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.2);
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.2);
+            }
+            50% {
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4), 0 12px 24px rgba(0, 0, 0, 0.4);
+            }
+            100% {
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.2);
+            }
+        }
+
+        /* Animación de carga */
+        .loader {
+            width: 0;
+            height: 20px;
+            background-color: #ee5b7a;
+            animation: fillLoader 3s linear infinite;
+        }
+
+        @keyframes fillLoader {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+
+        /* Tarjeta interactiva */
+        .card {
+            width: 200px;
+            margin: 20px;
+            display: inline-block;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .card:hover {
+            transform: scale(1.1) rotate(10deg);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Efecto adicional */
+        .card:hover {
+            background-color: #d09efe;
+        }
+    </style>
+</head>
+<body>
+    <h1>ACTIVIDAD 09</h1>
+
+    <!-- Botón interactivo -->
+    <button class="btn">Hover me!</button>
+
+    <!-- Animación de carga -->
+    <div class="loader"></div>
+
+    <!-- Tarjeta interactiva -->
+    <div class="card">
+        <img src="./imagen/_.jpeg" alt="Imagen de ejemplo">
+        <p>Atardecer TECMI</p>
+    </div>
+
+</body>
+</html>
+
+
